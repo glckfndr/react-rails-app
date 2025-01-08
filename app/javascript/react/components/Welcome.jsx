@@ -12,12 +12,13 @@ function Welcome() {
   );
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const rootElement = document.getElementById("welcome");
-  if (rootElement) {
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(<Welcome />);
-  }
-});
-
+const rootElement = document.getElementById("welcome");
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <Welcome />
+    </React.StrictMode>
+  );
+}
 export default Welcome;

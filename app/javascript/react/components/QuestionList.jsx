@@ -21,13 +21,13 @@ function QuestionList() {
   return (
     <div>
       {questions.map((question) => (
-        <div key={question.id}>
-          <p>
-            <b>Question:</b> {question.title}
-          </p>
-          <p>
-            <b>tag:</b> {question.tag}
-          </p>
+        <div className="card rounded-1 mt-3" key={question.id}>
+          <div className="card-body">
+            <h2 className="card-title">{question.title}</h2>
+            <p className="lead">
+              <span className="badge bg-primary">{question.tag}</span>
+            </p>
+          </div>
         </div>
       ))}
     </div>
