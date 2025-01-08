@@ -5,6 +5,7 @@ function Welcome() {
   return (
     <div className="container">
       <h1>Welcome to React!</h1>
+      <p className="lead">This is React Component with Rails!</p>
     </div>
   );
 }
